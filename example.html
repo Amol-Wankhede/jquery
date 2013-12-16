@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>jQuery Example</title>
+</head>
+<body>
+HTML
+<div class="panel">
+  <div class="panel-stage" style="display:none">Lorem ipsum Proident ea dolor irure non consectetur consectetur in enim eu ea deserunt aute laborum cillum pariatur minim dolor laboris proident anim culpa nisi amet tempor do eiusmod sit aliquip laboris nisi sunt proident cupidatat quis id eu ex dolor dolore in cillum cillum officia consequat in qui dolor adipisicing irure minim Excepteur cupidatat fugiat est nisi cupidatat ut aute ut eu reprehenderit commodo id elit deserunt sed dolore voluptate dolor amet magna eiusmod esse elit nulla sed ut voluptate cillum magna sed dolor tempor qui ex velit nisi sint sit Duis officia occaecat tempor dolore qui in labore adipisicing fugiat dolor sed esse incididunt veniam qui dolore mollit velit Ut dolor commodo nostrud dolor reprehenderit dolore Excepteur reprehenderit et adipisicing id velit in nostrud est labore ex id sunt ut enim in nisi sit esse laboris et quis elit reprehenderit do sed culpa nisi sed do magna sunt minim Excepteur nulla.</div>
+  <a href="#" class="panel-tab">Open <span>&or;</span></a>
+</div>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+$('.panel-tab').on('click', function(event){
+  event.preventDefault();
+  $('.panel-stage').toggle('slow', function(event){
+    if($(this).is(':visible')){
+      $('.panel-tab').html('Close &and;');
+    } else {
+      $('.panel-tab').html('Open &or;');
+    }
+  });
+});
+</script>
+</body>
+</html>
